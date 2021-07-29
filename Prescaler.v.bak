@@ -1,0 +1,24 @@
+module Prescaler(
+	input fast_clock,
+	input rst,
+	output enable
+);
+
+reg [12:0] cont;//LLegar a 5000 para 10Khz
+
+assign enable = (cont==13'b1001110001000)? 1'b1:1'b0;
+
+always @(posedge fast_clock or negedge rst)
+begin
+	if(!rst)
+	begin
+		cont = 13'b0000000000000;
+	end
+	else if(cont<13'b1001110001000)
+	begin
+		cont = cont + 13'b0000000000001;
+	end
+	else
+		cont = 13'b0000000000000;
+end
+endmodule

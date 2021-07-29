@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'fastclk'
+Slack : -3.100
+TNS   : -67.920
+
+Type  : Slow 1200mV 85C Model Setup 'Prescaler:P|cont[0]'
+Slack : -2.577
+TNS   : -31.401
+
+Type  : Slow 1200mV 85C Model Hold 'Prescaler:P|cont[0]'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'fastclk'
+Slack : 0.668
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fastclk'
+Slack : -3.000
+TNS   : -36.672
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Prescaler:P|cont[0]'
+Slack : -1.403
+TNS   : -25.254
+
+Type  : Slow 1200mV 0C Model Setup 'fastclk'
+Slack : -2.807
+TNS   : -60.936
+
+Type  : Slow 1200mV 0C Model Setup 'Prescaler:P|cont[0]'
+Slack : -2.266
+TNS   : -27.296
+
+Type  : Slow 1200mV 0C Model Hold 'Prescaler:P|cont[0]'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fastclk'
+Slack : 0.616
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fastclk'
+Slack : -3.000
+TNS   : -36.672
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Prescaler:P|cont[0]'
+Slack : -1.403
+TNS   : -25.254
+
+Type  : Fast 1200mV 0C Model Setup 'fastclk'
+Slack : -1.154
+TNS   : -22.019
+
+Type  : Fast 1200mV 0C Model Setup 'Prescaler:P|cont[0]'
+Slack : -0.451
+TNS   : -2.948
+
+Type  : Fast 1200mV 0C Model Hold 'Prescaler:P|cont[0]'
+Slack : 0.151
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'fastclk'
+Slack : 0.261
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fastclk'
+Slack : -3.000
+TNS   : -30.920
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Prescaler:P|cont[0]'
+Slack : -1.000
+TNS   : -18.000
+
+------------------------------------------------------------

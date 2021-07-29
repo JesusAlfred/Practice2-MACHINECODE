@@ -1,0 +1,56 @@
+module UnidadAritmetica(
+	input [3:0] iA,
+	input [3:0] iB,
+	input [3:0] Op,
+	output [4:0] Status,
+	output [3:0] R
+);
+
+always @(*)
+begin
+	case (Op)
+			0: R = iA - iB;
+			1: R = iA & iB;
+			2:	R = iA | iB;
+			3: R = ~iA;
+			4: R = iA ^ iB
+			5: R = ~iA;
+			6: R = ~iA  + 4'b1;
+			7: begin
+					R[3:1] = iA[2:0];
+					R[0] = 0;
+				end
+			8: begin
+					R[3] = iA[3];
+					R[2:0] = iA[3:1];
+				end
+			9: begin
+					R[3:1] = iA[2:0];
+					R[0] = 0;
+				end
+			10:begin
+					R[3] = 0;
+					R[2:0] = iA[3:1];
+				end
+			11:	begin
+						R[0] = iA[3];
+						R[3:1] = iA[2:0];
+					end
+			12:	begin
+						R[3] = iA[0];
+						R[2:0] = iA[3:1];
+					end
+			13:	begin 	
+						R[3:0] = iA + iB;
+					end
+	endcase
+end
+
+assign Status[4] = R == 0;
+assign Status[3] = R[3];s
+assign Status[2] = (iA + iB) > 5'b01111;
+
+
+
+
+endmodule

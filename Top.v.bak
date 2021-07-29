@@ -1,0 +1,40 @@
+module Top(
+	input fastcls,
+	input rst
+);
+
+wire [3:0]A;
+wire [3:0]B;
+wire [4:0]Status;
+wire [3:0]R;
+wire [3:0]Op;
+
+wire clk;
+
+Prescaler P(
+	.fast_clock						(fastclk),
+	.rst								(rst),
+	.enable							(clk)
+);
+
+
+UnidadAritmetica ALU(
+	.EntradaA						(A), 
+	.EntradaB						(B), 
+	.Opcode							(Op),
+	.flasg							(Status),
+	.r									(R)
+);
+
+UnidadControl Uc(
+	.clk								(cls),
+	.rst								(rst),
+	.status							(Status),
+	.R									(R),
+	.oA								(A),
+	.oB								(B),
+	.oOp								(Op)
+)
+
+
+endmodule

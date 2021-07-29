@@ -1,0 +1,149 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "disp1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "disp1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "disp1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "disp1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "disp1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "disp1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "disp1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "disp1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "disp2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "disp2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "disp2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "disp2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "disp2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "disp2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "disp2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "disp2[7]",
+					"strict" : false
+				},
+				{
+					"name" : "disp3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "disp3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "disp3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "disp3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "disp3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "disp3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "disp3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "disp3[7]",
+					"strict" : false
+				},
+				{
+					"name" : "led",
+					"strict" : false
+				},
+				{
+					"name" : "ubData[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ubData[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ubData[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ubData[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ubCre[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ubCre[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ubCre[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ubCre[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "fastclk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

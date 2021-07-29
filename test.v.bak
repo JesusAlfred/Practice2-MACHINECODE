@@ -1,0 +1,28 @@
+`timescale 1ns / 1ps
+module testbench_RegisterD ();
+parameter CLK_PERIOD = 2;
+
+reg  [3:0]iA, [3:0]iB, [3:0]Op, [4:0]Status, [3:0]R;
+
+reg clk;
+
+always #(CLK_PERIOD/2) clk_tb = ~clk_tb;
+
+UnidadAritmetica ALU(
+	.iA								(iA), 
+	.iB								(iB), 
+	.Op								(Op),
+	.status							(Status),
+	.R									(R)
+);
+initial
+begin
+	#2  iA = 4'd5;
+			iB = 4'd2;
+			Op = 4'd13;
+	#2
+	$display("Hey, the simulation is finished!!");
+	$stop;
+end
+
+endmodule
